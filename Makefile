@@ -1,11 +1,11 @@
 # Bequeme Shortcuts
-LESSON?=2
+KURS?=grundkurs
+NR?=2
 SLUG?=dateien
-TITLE?=Dateien & Ordner
-PREFIX?=GL
+TITLE?=Dateien \& Ordner
 
-new:
-	./scripts/new-lesson.sh $(PREFIX) $(LESSON) $(SLUG) "$(TITLE)"
+neue:
+	./scripts/neue-lektion.sh $(KURS) $(NR) $(SLUG) "$(TITLE)"
 
 export:
-	./scripts/export-slides.sh lessons/$(shell printf "%02d" $(LESSON))_$(SLUG)/slides.md
+	./scripts/exportiere-folien.sh $(KURS)/lektionen/GL$(NR)_$(SLUG)/slides/folien.md
