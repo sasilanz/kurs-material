@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+node_modules/
+**/.venv/
+**/__pycache__/
+exports/
+slides/*.pdf
+slides/*.html
+**/*.tmp
