@@ -13,7 +13,7 @@ all: handouts
 handouts: $(EXPORTS)
 
 # Muster-Regel: aus grundkurs/lektionen/LXX/handout.md -> exports/grundkurs/GLXX_handout.pdf
-$(EXPORT_DIR)/$(COURSE_PREFIX)L%_handout.pdf: $(COURSE_SLUG)/lektionen/L%/handout.md
+$(EXPORT_DIR)/$(COURSE_PREFIX)L%_handout.pdf: ./$(COURSE_SLUG)/lektionen/L%/handout.md
 	@mkdir -p $(EXPORT_DIR)
 	$(PANDOC) $(GEOM) -o $@ $<
 
